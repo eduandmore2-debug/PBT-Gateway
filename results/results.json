@@ -1,0 +1,416 @@
+{
+ "meta": {
+  "python": "3.13.18",
+  "machine": "x86_64",
+  "cores": 2,
+  "customers": 300,
+  "fields": [
+   "pan",
+   "iban",
+   "national_id",
+   "phone",
+   "email",
+   "dob",
+   "balance"
+  ],
+  "channels": [
+   "email",
+   "sms",
+   "http",
+   "memo"
+  ],
+  "encodings": [
+   "plain",
+   "spaced",
+   "zero_width",
+   "url",
+   "base64",
+   "hex",
+   "words",
+   "reversed",
+   "split",
+   "digit_shift",
+   "char_codes"
+  ]
+ },
+ "E1_exfiltration": {
+  "B0": {
+   "attempts": 92400,
+   "attempt_leak_rate": 1.0,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 1.0,
+   "by_encoding": {
+    "plain": 1.0,
+    "spaced": 1.0,
+    "zero_width": 1.0,
+    "url": 1.0,
+    "base64": 1.0,
+    "hex": 1.0,
+    "words": 1.0,
+    "reversed": 1.0,
+    "split": 1.0,
+    "digit_shift": 1.0,
+    "char_codes": 1.0
+   },
+   "by_field_worst": {
+    "pan": 1.0,
+    "iban": 1.0,
+    "national_id": 1.0,
+    "phone": 1.0,
+    "email": 1.0,
+    "dob": 1.0,
+    "balance": 1.0
+   },
+   "blocked_rate": 0.0
+  },
+  "B1": {
+   "attempts": 92400,
+   "attempt_leak_rate": 0.8292640692640693,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 1.0,
+   "by_encoding": {
+    "plain": 0.14285714285714285,
+    "spaced": 0.840952380952381,
+    "zero_width": 1.0,
+    "url": 1.0,
+    "base64": 1.0,
+    "hex": 0.9847619047619047,
+    "words": 1.0,
+    "reversed": 0.7780952380952381,
+    "split": 0.8366666666666667,
+    "digit_shift": 0.7085714285714285,
+    "char_codes": 0.83
+   },
+   "by_field_worst": {
+    "pan": 1.0,
+    "iban": 1.0,
+    "national_id": 1.0,
+    "phone": 1.0,
+    "email": 1.0,
+    "dob": 1.0,
+    "balance": 1.0
+   },
+   "blocked_rate": 0.17073593073593074
+  },
+  "B1+": {
+   "attempts": 92400,
+   "attempt_leak_rate": 0.4035930735930736,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 1.0,
+   "by_encoding": {
+    "plain": 0.14285714285714285,
+    "spaced": 0.42857142857142855,
+    "zero_width": 0.14285714285714285,
+    "url": 0.14285714285714285,
+    "base64": 0.35714285714285715,
+    "hex": 0.3461904761904762,
+    "words": 0.5714285714285714,
+    "reversed": 0.14285714285714285,
+    "split": 0.809047619047619,
+    "digit_shift": 0.6433333333333333,
+    "char_codes": 0.7123809523809523
+   },
+   "by_field_worst": {
+    "pan": 1.0,
+    "iban": 1.0,
+    "national_id": 1.0,
+    "phone": 1.0,
+    "email": 1.0,
+    "dob": 1.0,
+    "balance": 1.0
+   },
+   "blocked_rate": 0.5964069264069264
+  },
+  "B2": {
+   "attempts": 92400,
+   "attempt_leak_rate": 0.0,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 0.0,
+   "by_encoding": {
+    "plain": 0.0,
+    "spaced": 0.0,
+    "zero_width": 0.0,
+    "url": 0.0,
+    "base64": 0.0,
+    "hex": 0.0,
+    "words": 0.0,
+    "reversed": 0.0,
+    "split": 0.0,
+    "digit_shift": 0.0,
+    "char_codes": 0.0
+   },
+   "by_field_worst": {
+    "pan": 0.0,
+    "iban": 0.0,
+    "national_id": 0.0,
+    "phone": 0.0,
+    "email": 0.0,
+    "dob": 0.0,
+    "balance": 0.0
+   },
+   "blocked_rate": 0.0
+  },
+  "B3": {
+   "attempts": 92400,
+   "attempt_leak_rate": 0.09090909090909091,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 1.0,
+   "by_encoding": {
+    "plain": 1.0,
+    "spaced": 0.0,
+    "zero_width": 0.0,
+    "url": 0.0,
+    "base64": 0.0,
+    "hex": 0.0,
+    "words": 0.0,
+    "reversed": 0.0,
+    "split": 0.0,
+    "digit_shift": 0.0,
+    "char_codes": 0.0
+   },
+   "by_field_worst": {
+    "pan": 1.0,
+    "iban": 1.0,
+    "national_id": 1.0,
+    "phone": 1.0,
+    "email": 1.0,
+    "dob": 1.0,
+    "balance": 1.0
+   },
+   "blocked_rate": 0.0
+  },
+  "PBT": {
+   "attempts": 92400,
+   "attempt_leak_rate": 0.0,
+   "scenarios": 8400,
+   "worst_case_leak_rate": 0.0,
+   "by_encoding": {
+    "plain": 0.0,
+    "spaced": 0.0,
+    "zero_width": 0.0,
+    "url": 0.0,
+    "base64": 0.0,
+    "hex": 0.0,
+    "words": 0.0,
+    "reversed": 0.0,
+    "split": 0.0,
+    "digit_shift": 0.0,
+    "char_codes": 0.0
+   },
+   "by_field_worst": {
+    "pan": 0.0,
+    "iban": 0.0,
+    "national_id": 0.0,
+    "phone": 0.0,
+    "email": 0.0,
+    "dob": 0.0,
+    "balance": 0.0
+   },
+   "blocked_rate": 0.0
+  }
+ },
+ "E2_utility": {
+  "B0": {
+   "T1 pay bill with card": 1.0,
+   "T2 transfer to saved beneficiary": 1.0,
+   "T3 show balance": 1.0,
+   "T4 show card last four": 1.0,
+   "T5 affordability check": 1.0,
+   "T6 e-mail statement to self": 1.0,
+   "T7 share IBAN with employer": 1.0,
+   "T8 identity verification": 1.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 1.0,
+   "overall": 1.0,
+   "approvals_per_customer": 0.0
+  },
+  "B1": {
+   "T1 pay bill with card": 1.0,
+   "T2 transfer to saved beneficiary": 1.0,
+   "T3 show balance": 1.0,
+   "T4 show card last four": 1.0,
+   "T5 affordability check": 1.0,
+   "T6 e-mail statement to self": 1.0,
+   "T7 share IBAN with employer": 0.0,
+   "T8 identity verification": 1.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 1.0,
+   "overall": 0.9,
+   "approvals_per_customer": 0.0
+  },
+  "B1+": {
+   "T1 pay bill with card": 1.0,
+   "T2 transfer to saved beneficiary": 1.0,
+   "T3 show balance": 1.0,
+   "T4 show card last four": 1.0,
+   "T5 affordability check": 1.0,
+   "T6 e-mail statement to self": 1.0,
+   "T7 share IBAN with employer": 0.0,
+   "T8 identity verification": 1.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 1.0,
+   "overall": 0.9,
+   "approvals_per_customer": 0.0
+  },
+  "B2": {
+   "T1 pay bill with card": 0.0,
+   "T2 transfer to saved beneficiary": 0.0,
+   "T3 show balance": 0.0,
+   "T4 show card last four": 0.0,
+   "T5 affordability check": 0.0,
+   "T6 e-mail statement to self": 0.0,
+   "T7 share IBAN with employer": 0.0,
+   "T8 identity verification": 0.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 0.0,
+   "overall": 0.1,
+   "approvals_per_customer": 0.0
+  },
+  "B3": {
+   "T1 pay bill with card": 1.0,
+   "T2 transfer to saved beneficiary": 1.0,
+   "T3 show balance": 1.0,
+   "T4 show card last four": 0.0,
+   "T5 affordability check": 0.0,
+   "T6 e-mail statement to self": 1.0,
+   "T7 share IBAN with employer": 1.0,
+   "T8 identity verification": 1.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 1.0,
+   "overall": 0.8,
+   "approvals_per_customer": 0.0
+  },
+  "PBT": {
+   "T1 pay bill with card": 1.0,
+   "T2 transfer to saved beneficiary": 1.0,
+   "T3 show balance": 1.0,
+   "T4 show card last four": 1.0,
+   "T5 affordability check": 1.0,
+   "T6 e-mail statement to self": 1.0,
+   "T7 share IBAN with employer": 1.0,
+   "T8 identity verification": 1.0,
+   "T9 spending summary": 1.0,
+   "T10 show date of birth": 1.0,
+   "overall": 1.0,
+   "approvals_per_customer": 1.0
+  }
+ },
+ "E3_pbt_attacks": {
+  "replay_other_session": [
+   0,
+   300
+  ],
+  "typed_slot_on_external_tool": [
+   0,
+   300
+  ],
+  "wrong_slot_type": [
+   0,
+   300
+  ],
+  "amount_over_cap": [
+   0,
+   300
+  ],
+  "use_count_exceeded": [
+   0,
+   300
+  ],
+  "grant_for_other_recipient": [
+   0,
+   300
+  ],
+  "minimised_view_partial": [
+   300,
+   300
+  ]
+ },
+ "E4_inference": {
+  "3": {
+   "median_abs_error_SAR": 2353.899999999994,
+   "median_interval_SAR": 25000.0
+  },
+  "5": {
+   "median_abs_error_SAR": 612.5849999999991,
+   "median_interval_SAR": 6250.0
+  },
+  "10": {
+   "median_abs_error_SAR": 20.88812499999767,
+   "median_interval_SAR": 195.3125
+  },
+  "20": {
+   "median_abs_error_SAR": 0.18325927734622383,
+   "median_interval_SAR": 0.762939453125
+  },
+  "unlimited": {
+   "median_abs_error_SAR": 0.18325927734622383,
+   "median_interval_SAR": 0.762939453125
+  }
+ },
+ "E5_overhead": {
+  "B0": {
+   "external_free_text_call": {
+    "median_us": 0.193,
+    "p95_us": 0.283
+   },
+   "typed_slot_call": {
+    "median_us": 0.214,
+    "p95_us": 0.25
+   }
+  },
+  "B1": {
+   "external_free_text_call": {
+    "median_us": 19.955,
+    "p95_us": 24.796
+   },
+   "typed_slot_call": {
+    "median_us": 0.708,
+    "p95_us": 0.886
+   }
+  },
+  "B1+": {
+   "external_free_text_call": {
+    "median_us": 341.322,
+    "p95_us": 484.053
+   },
+   "typed_slot_call": {
+    "median_us": 0.756,
+    "p95_us": 0.885
+   }
+  },
+  "B2": {
+   "external_free_text_call": {
+    "median_us": 0.199,
+    "p95_us": 0.238
+   },
+   "typed_slot_call": {
+    "median_us": 0.28,
+    "p95_us": 0.334
+   }
+  },
+  "B3": {
+   "external_free_text_call": {
+    "median_us": 2.074,
+    "p95_us": 2.33
+   },
+   "typed_slot_call": {
+    "median_us": 2.348,
+    "p95_us": 2.607
+   }
+  },
+  "PBT": {
+   "external_free_text_call": {
+    "median_us": 0.921,
+    "p95_us": 1.006
+   },
+   "typed_slot_call": {
+    "median_us": 2.604,
+    "p95_us": 3.206
+   },
+   "session_setup_8_fields": {
+    "median_us": 32.41,
+    "p95_us": 50.122
+   }
+  }
+ }
+}
